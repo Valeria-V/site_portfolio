@@ -64,10 +64,6 @@ p{
         transition: all 0.2s ease-out;
     }
 
-    .jl-btn-contact:hover{
-        background-position-y: -45px;
-    }
-
     .jl-contact-info{
         width: 245px;
         height: 165px;
@@ -76,6 +72,8 @@ p{
         bottom: 115px;
         right: 65px;
         z-index: 200;
+        display: none;
+
     }
 
     .jl-contact-inner{
@@ -125,7 +123,7 @@ p{
         height: 25px;
         display: block;
         position: absolute;
-        bottom: -22px;
+        bottom: -20px;
         right: 0;
         background: transparent url('../img/corner.svg') no-repeat;
     }
@@ -235,4 +233,15 @@ p{
 
 .jl-bg-black{
     background-color:#000;
+}
+
+
+/* CLASSES COMPORTAMENTO(ESTADO) */
+
+.jl-is-open{
+    display: block;
+}
+
+.jl-change-icon{
+    background-position-y: -45px;
 }
